@@ -1,7 +1,8 @@
 from django.urls import path
+from .views import ActivityAPI
 
 app_name = 'wrapper'
 
 urlpatterns = [
-    path(''),
+    path('activity/', ActivityAPI.as_view()),
 ]
