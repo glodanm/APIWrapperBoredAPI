@@ -91,5 +91,7 @@ docker-compose -d --build
 docker-compose exec app python manage.py migrate
 ```
 
-
-
+8) To run tests:
+```bash
+docker-compose exec app python manage.py test wrapper
+```
