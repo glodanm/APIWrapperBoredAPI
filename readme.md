@@ -56,3 +56,40 @@ This command should return the last 5 activities saved in the database.
  - Make sure that you include a dependencies file (requirements.txt, gemfile, package.json, etc.). But don't include any virtual environment or packages installed in your repository.
  - Add unit tests for your work.
 
+## Installation
+
+1) Clone my [repository](https://github.com/glodanm/APIWrapperBoredAPI) to install project:
+
+```bash
+git clone https://github.com/glodanm/APIWrapperBoredAPI
+```
+
+2) Open this project in your IDE.
+
+3) Create virtual environment:
+```bash
+python3 -m venv .venv
+```
+
+4) Activate virtual environment:
+```bash
+source .venv/bin/activate
+```
+
+5) Install all required libraries:
+```bash
+pip install -r requirements.txt
+```
+
+6) To run docker:
+```bash
+docker-compose -d --build
+```
+
+7) To make migrations on docker:
+```bash
+docker-compose exec app python manage.py migrate
+```
+
+
+
